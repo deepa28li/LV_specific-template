@@ -13,4 +13,4 @@ class school_detail(DetailView):
     context_object_name='sclobject'
 
 class school_create(CreateView):
-    
+
