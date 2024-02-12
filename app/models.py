@@ -8,7 +8,7 @@ class School(models.Model):
     sprincipal=models.CharField(max_length=100)
     sloction=models.CharField(max_length=100)
 
-    def gert_absolute_url(self):
+    def get_absolute_url(self):
         return reverse('school_detail',kwargs={'pk':self.pk})
 
     def __str__(self):
