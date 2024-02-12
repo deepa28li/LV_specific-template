@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'app/dummy.html' %}
+
+{% block title %}
+    <title>School Detail</title>
+{% endblock %}
+
+
+{% block body_block %}
     <center>
         <h1>Specific Template Directory</h1>
-        <h1>List of School Object</h1>
-        {% for scl in schools %}
-        <a href="{{school.pk}}"> <h3>{{scl.sname}}</h3></a>
+        <h1>List of the School Object </h1>
+        {% for school in schools %}
+            <a href="{{school.pk}}"><h2>{{school.sname}}</h2></a>
         {% endfor %}
     </center>
-</body>
-</html>
+
+{% endblock %}
