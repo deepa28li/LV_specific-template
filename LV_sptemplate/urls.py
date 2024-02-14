@@ -23,6 +23,7 @@ urlpatterns = [
     path('create_school/',create_school.as_view(),name='create_school'),
 
     re_path('^update/(?P<pk>\d+)/',School_update.as_view(),name='School_update'),
+    re_path('^delete/(?P<pk>\d+)/',schooldelete.as_view(),name='schooldelete'),
     re_path('(?P<pk>\d+)/',school_detail.as_view(),name='school_detail'),    
     
 ]
